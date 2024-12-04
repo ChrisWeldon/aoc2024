@@ -1,1 +1,5 @@
-**/[Ii]nput*
+
+
+# Added by cargo
+
+/target
