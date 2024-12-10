@@ -1,6 +1,9 @@
 use std::env;
+pub mod lexer;
+
 pub mod day_1;
 pub mod day_2;
+
 
 fn main(){
     let args: Vec<String> = env::args().collect();
