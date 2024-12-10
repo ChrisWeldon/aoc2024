@@ -3,6 +3,14 @@ use std::io::{BufReader, BufRead};
 use regex::Regex;
 use std::collections::HashMap;
 
+pub fn run(prob_num: i32, input: String) -> i32{
+    match prob_num {
+        1 => problem_1(input),
+        2 => problem_2(input),
+        _ => panic!("{} does not exist!", prob_num)
+    }
+}
+
 pub fn problem_1(filename: String) -> i32{
     let (mut left, mut right) = load_input(filename);
     calc_total_difference(&mut left, &mut right)
