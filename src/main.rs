@@ -20,6 +20,7 @@ fn main(){
 
     let res: i32 = match day_num {
         1 => day_1::run(problem_num, input_path.to_string()),
+        2 => day_2::run(problem_num, input_path.to_string()),
         _ => panic!("Sorry...day not implemented yet!!")
     };
 
