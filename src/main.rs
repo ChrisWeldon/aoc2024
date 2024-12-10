@@ -7,7 +7,11 @@ pub mod day_2;
 
 fn main(){
     let args: Vec<String> = env::args().collect();
-    
+
+    if args.len() == 1{
+        panic!("usage: aoc-2024 <day> <problem number> <path/to/input.txt>");
+    }
+
     let day = &args[1].to_string();
     let day_num = day.parse::<i32>().unwrap_or_else(|error| {
         panic!("Invalid arg[1] type problem={error:?}. Expected integer")
